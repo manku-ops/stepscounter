@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <title>StepTrack</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- App Header -->
+    <div class="app-name">StepTrack</div>
+    <div class="app-title">Pedometer</div>
+
+    <!-- Big Step Number -->
+    <div class="step-count" id="step-display">0</div>
+    <div class="step-sublabel">Steps Today</div>
+
+    <!-- Progress Bar -->
+    <div class="progress-label">
+      <span>Progress</span>
+      <span id="pct-label">0 / 10,000</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <!-- Stats: Distance, Calories, Time -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-val" id="distance-display">0.00</div>
+        <div class="stat-lbl">km</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val" id="calories-display">0.00</div>
+        <div class="stat-lbl">kcal</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val" id="time-display">0:00</div>
+        <div class="stat-lbl">time</div>
+      </div>
+    </div>
+
+    <!-- Status indicator -->
+    <div class="status-row">
+      <div class="dot" id="dot"></div>
+      <span class="status-text" id="status-text">Tap Start to begin</span>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-row">
+      <button class="btn btn-start" id="start-btn" onclick="start()">▶ Start</button>
+      <button class="btn btn-reset" onclick="reset()">↺ Reset</button>
+    </div>
+
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
