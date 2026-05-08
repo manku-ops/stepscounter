@@ -4,10 +4,10 @@
 
 let steps = 0;
 let lastMovement = 0;
-let threshold = 3;       // minimum change in movement to count as a step
+let threshold = 5;       // minimum change in movement to count as a step
 let canStep = true;      // debounce flag — stops double counting
 
-// Assumptions
+// AssumptionsS
 let stepLength = 0.75;       // meters per step
 let caloriesPerStep = 0.04;  // kcal per step
 
